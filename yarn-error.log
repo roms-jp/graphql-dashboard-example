@@ -1,0 +1,66 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Adolfo\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Program Files (x86)\VMware\VMware Player\bin\;c:\devkitPro\msys2\usr\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\php7.3;C:\Program Files\PuTTY\;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\android-platform-tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Python27\DELETE;C:\Users\Adolfo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\CMake\bin\;C:\src\vcpkg\;C:\Program Files\dotnet\;C:\MinGW\bin\;C:\Users\Adolfo\AppData\Local\Programs\Python\Python310;C:\Users\Adolfo\AppData\roaming\Python\Python310\scripts;;C:\Program Files (x86)\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PowerShell\7\;C:\Users\Adolfo\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Adolfo\AppData\Local\Programs\Python\Python310\;C:\Program Files (x86)\VMware\VMware Player\bin\;c:\devkitPro\msys2\usr\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\php7.3;C:\Program Files\PuTTY\;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Amazon\AWSSAMCLI\bin\;C:\Program Files\android-platform-tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Python27\DELETE;C:\Users\Adolfo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\CMake\bin\;C:\src\vcpkg\;C:\Program Files\dotnet\;C:\MinGW\bin\;C:\Users\Adolfo\AppData\Local\Programs\Python\Python310;C:\Users\Adolfo\AppData\roaming\Python\Python310\scripts;;C:\Program Files (x86)\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PowerShell\7\;c:\users\Adolfo\appdata\local\yarn\bin;C:\Users\Adolfo\AppData\Roaming\npm;C:\Users\Adolfo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\bin;;C:\Users\Adolfo\flutter\bin;C:\Python27\DELETE;C:\Users\Adolfo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\JetBrains Rider 2022.1.1\bin;;C:\Program Files\CMake\bin\;C:\Users\Adolfo\.dotnet\tools;C:\tools\dart-sdk\bin;C:\Users\Adolfo\AppData\Roaming\Pub\Cache\bin;C:\Users\Adolfo\AppData\Local\Programs\Python\Python310;C:\Users\Adolfo\AppData\roaming\Python\Python310\scripts;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@mui: Request "https://registry.yarnpkg.com/@mui" returned a 405
+      at Request.params.callback [as _callback] (C:\Users\Adolfo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66997:18)
+      at Request.self.callback (C:\Users\Adolfo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (C:\Users\Adolfo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (C:\Users\Adolfo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "react-ts",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+      "@apollo/client": "^3.6.9",
+      "@babel/core": "^7.0.0",
+      "@emotion/react": "^11.10.0",
+      "@emotion/styled": "^11.10.0",
+      "@mui": "*",
+      "@mui/icons-material": "^5.10.2",
+      "@mui/material": "^5.10.2",
+      "@types/react": "^18.0.8",
+      "@types/react-dom": "^18.0.2",
+      "graphql": "^16.6.0",
+      "graphql-ws": "^5.5.5",
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "react-router-dom": "^6.3.0",
+      "subscriptions-transport-ws": "^0.9.0 || ^0.11.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+      "react-scripts": "latest"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

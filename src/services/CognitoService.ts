@@ -14,28 +14,24 @@ export interface AuthenticationResult {
 export interface ChallengeParameters {}
 
 export default class CognitoService {
-  private static readonly cognitoUrl =
-    'https://cognito-idp.ap-northeast-1.amazonaws.com/';
+  private static readonly cognitoUrl = process.env.REACT_APP_COGNITO_URL || "";
 
-  private static readonly clientID = '4rom2oa41ljg645kt6vspgnl0d';
+  private static readonly clientID = process.env.REACT_APP_COGNITO_CLIENT_ID || "";
 
-  public static async signIn(
-    userName: String,
-    password: String
-  ): Promise<AuthenticationResponse | null> {
-    console.log('SignIn:', { userName, password });
+  public static async signIn(userName: String, password: String): Promise<AuthenticationResponse | null> {
+    console.log("SignIn:", { userName, password });
     return fetch(this.cognitoUrl, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/x-amz-json-1.1',
-        'X-Amz-Target': 'AWSCognitoIdentityProviderService.InitiateAuth',
+        "Content-Type": "application/x-amz-json-1.1",
+        "X-Amz-Target": "AWSCognitoIdentityProviderService.InitiateAuth",
       },
       body: JSON.stringify({
         AuthParameters: {
           USERNAME: userName,
           PASSWORD: password,
         },
-        AuthFlow: 'USER_PASSWORD_AUTH',
+        AuthFlow: "USER_PASSWORD_AUTH",
         ClientId: this.clientID,
       }),
     })
